@@ -23,7 +23,7 @@ public class ws8 {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int count = 0;
+        int countEven = 0;
         int sumOdd = 0;
 
         while (true) {
@@ -32,20 +32,18 @@ public class ws8 {
 
             if (n == 0) {
                 break;
-            }
-            if (n < 1 || n > 10) {
+            } else if (n < 1 || n > 10) {
                 System.out.println("Incorrect, try again");
-            }
-            if (n > 0 && n < 11) {
+            } else {
                 if (n % 2 == 0) {
-                    count++;
+                    countEven++;
                 } else {
                     sumOdd += n;
                 }
             }
         }
 
-        System.out.printf("Number of even integer: %d\n", count);
+        System.out.printf("Number of even integer: %d\n", countEven);
         System.out.printf("Sum of odd integer = %d\n", sumOdd);
     }
 }
