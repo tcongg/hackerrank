@@ -22,12 +22,9 @@ public class ws7 {
         for (int i = 1; i <= n; i++) {
             S1 += ((2 * i) + 1);
             S2 += (1 / (double) (2 * i));
+            S3 += i;
         }
-        for (int i = 0; i < n; i++) {
-            for (int j = i; j < n; j++) {
-                S3 += j;
-            }
-        }
+
         System.out.println(S1);
         System.out.println(S2);
         System.out.println(S3);
