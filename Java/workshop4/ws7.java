@@ -7,7 +7,7 @@
 
 import java.util.Scanner;
 
-public class ws7 {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -18,11 +18,12 @@ public class ws7 {
         int S1 = 1;
         double S2 = 1;
         int S3 = 0;
+        int temp = 0;
 
         for (int i = 1; i <= n; i++) {
             S1 += ((2 * i) + 1);
-            S2 += (1 / (double) (2 * i));
-            S3 += i;
+            S2 += (1 / (double)(2 * i));
+            S3 += (temp += i);
         }
 
         System.out.println(S1);
