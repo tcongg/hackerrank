@@ -1,4 +1,8 @@
-// giai phuong trinh bac nhat
+/* 
+ * Viet chuong trình giai phuong trình bac nhat ax + b = 0. 
+ * Trong dó a,b là 2 sp thuc nhap tu bàn phím.
+ */
+
 import java.util.Scanner;
 
 public class ws1 {
