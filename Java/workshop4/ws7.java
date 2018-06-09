@@ -1,5 +1,5 @@
 /*
- * nhap 1 so nguyen N tu ban phim va tinh cac tong sau:
+ * Nhap 1 so nguyen n tu ban phim va tinh cac tong sau:
  * S1 = 1 + 3 +5 + … + (2n+1)
  * S2 = 1 + ½ + ¼ + ? ...+ 1/2n
  * S3 = 1 + (1+2) + (1+2+3) + … + (1+2+3..+n)
