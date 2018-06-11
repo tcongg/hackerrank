@@ -17,12 +17,13 @@ public class ws4 {
 
         if (isPrime(n)) {
             System.out.println(n + " is a prime number\n");
-            System.out.println("All prime number smaller than " + n + " is: ");
-            listPrime(n);
+
         } else {
             System.out.println(n + " is not a prime number\n");
         }
 
+        System.out.println("All prime number smaller than " + n + " is: ");
+        listPrime(n);
     }
 
     public static boolean isPrime(int n) {
