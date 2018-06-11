@@ -1,5 +1,5 @@
 /*
- * Viet ham nhap 1 so nguyen n va xac dinh n co phai so nguyen to hay khong
+ * Viet ham nhap 1 so nguyen n va xac dinh n co phai so nguyen to hay khong.
  * boolean isPrime(int n);
  * Su dung ham isPrime(n), viet ham nhan 1 so nguyen to n va in ra tat ca cac so nguyen to nho hon n
  * void listPrime(int n);
