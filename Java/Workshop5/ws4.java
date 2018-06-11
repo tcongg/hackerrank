@@ -15,13 +15,6 @@ public class ws4 {
         System.out.printf("Enter an integer n: ");
         int n = scanner.nextInt();
 
-        if (isPrime(n)) {
-            System.out.println(n + " is a prime number\n");
-
-        } else {
-            System.out.println(n + " is not a prime number\n");
-        }
-
         System.out.println("All prime number smaller than " + n + " is: ");
         listPrime(n);
     }
