@@ -20,9 +20,18 @@ public class ws2 {
     }
 
     public static int fun2(int n, int m) {
+        int pow1 = 1;
+        int pow2 = 1;
 
-        return (int)((Math.pow(n, m) + Math.pow(m, n)));
+        for (int i = 1; i <= m; i++) {
+            pow1 = n * i;
+        }
 
+        for (int i = 1; i <= n; i++) {
+            pow2 = m * i;
+        }
+        
+        return pow1 + pow2;
     }
 
 }
