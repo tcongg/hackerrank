@@ -1,5 +1,5 @@
 /*
- * Viet tro choi 3 cay cua 2 nguoi choi
+ * Viet tro choi 3 cay cua 2 nguoi choi.
  * Nhap ten nguoi choi 1: Nguyen A
  * La bai 1: x (so ngau nhien 1 - 9)
  * La bai 2: y
