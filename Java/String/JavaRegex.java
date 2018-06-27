@@ -12,12 +12,11 @@ class Solution {
             String IP = in.next();
             System.out.println(IP.matches(new MyRegex().pattern));
         }
-
     }
 }
 
 class MyRegex {
-
+    
     String pattern;
 
     public MyRegex() {
