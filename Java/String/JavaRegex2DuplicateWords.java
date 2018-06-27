@@ -7,15 +7,15 @@ import java.util.regex.Pattern;
 public class Solution {
 
     public static void main(String[] args) {
-
         String regex = "\\b(\\w+)(\\W+\\1\\b)+";
+        
         Pattern p = Pattern.compile(regex, Pattern.CASE_INSENSITIVE);
 
-        Scanner in = new Scanner(System.in);
-        int numSentences = Integer.parseInt(in.nextLine());
+        Scanner scanner = new Scanner(System.in);
+        int numSentences = Integer.parseInt(scanner.nextLine());
         
         while (numSentences-- > 0) {
-            String input = in.nextLine();
+            String input = scanner.nextLine();
             
             Matcher m = p.matcher(input);
             
