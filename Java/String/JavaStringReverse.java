@@ -1,9 +1,8 @@
 // https://www.hackerrank.com/challenges/java-string-reverse/problem
 
-import java.io.*;
 import java.util.*;
 
-public class Solution {
+public class Main {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -12,7 +11,7 @@ public class Solution {
         String newString = string.replaceAll("\\s", "");
 
         char[] str1 = newString.toLowerCase().toCharArray();
-        
+
         if (str1.length == 1) {
             System.out.println("Yes");
         } else {
@@ -21,9 +20,9 @@ public class Solution {
                     System.out.println("No");
                     return;
                 }
-                System.out.println("Yes");
-                return;
             }
+            
+            System.out.println("Yes");
         }
     }
 }
