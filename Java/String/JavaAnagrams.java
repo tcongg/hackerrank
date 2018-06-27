@@ -7,33 +7,29 @@ public class Solution {
         char array1[] = a.toLowerCase().toCharArray();
         char array2[] = b.toLowerCase().toCharArray();
         
-        sortArray(array1);
-        sortArray(array2);
+        sortCharacterAscending(array1);
+        sortCharacterAscending(array2);
 
         if (array1.length != array2.length) {
             return false;
         } else {
-            int check = 0;
+            boolean check = true;
 
             for (int i = 0; i < array1.length; i++) {
                 if (array1[i] != array2[i]) {
-                    check++;
+                   check = false;
                 }
             }
             
-            if (check != 0) {
-                return false;
-            } else {
-                return true;
-            }  
+            return check;
         } 
     }
 
-    public static void sortArray(char[] array) {
+    public static void sortCharacterAscending(char[] array) {
         char tmp;
         for (int i = 0; i < array.length; i++) {
             for (int j = 0; j < array.length - 1; j++) {
-                if ((int)array[j] > (int)array[j + 1]) {
+                if (((int)array[j] > (int)array[j + 1]) {
                     tmp = array[j];
                     array[j] = array[j + 1];
                     array[j +1] = tmp;
