@@ -12,20 +12,18 @@ public class Solution {
         String newString = string.replaceAll("\\s", "");
 
         char[] str1 = newString.toLowerCase().toCharArray();
-
-        boolean isPalindrome = true;
-
-        for (int i = 0; i < str1.length / 2; i++) {
-                if (str1[i] != str1[(str1.length - i) - 1]) {
-                    isPalindrome = false;
-                    break;
-                }
-        }
-
-        if (isPalindrome) {
-                System.out.println("Yes");
+        
+        if (str1.length == 1) {
+            System.out.println("Yes");
         } else {
-                System.out.println("No");
+            for (int i = 0; i < str1.length / 2; i++) {
+                if (str1[i] != str1[(str1.length - i) - 1]) {
+                    System.out.println("No");
+                    return;
+                }
+                System.out.println("Yes");
+                return;
+            }
         }
     }
 }
